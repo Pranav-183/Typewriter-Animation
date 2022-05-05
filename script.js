@@ -2,7 +2,7 @@ const text = document.querySelector('.text')
 const form = document.querySelector('form')
 
 let mssg = Array.from('Hello, this is the TYPEWRITER ANIMATION!')
-let speed = 10
+let speed = 8
 let stored = false
 
 function animate() {
