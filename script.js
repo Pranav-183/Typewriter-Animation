@@ -1,7 +1,8 @@
-let mssg = Array.from('Hello, this is the TYPEWRITER ANIMATION!')
 const text = document.querySelector('.text')
 const form = document.querySelector('form')
 
+let mssg = Array.from('Hello, this is the TYPEWRITER ANIMATION!')
+let speed = 10
 let stored = false
 
 function animate() {
@@ -21,7 +22,7 @@ function animate() {
          if (i === mssg.length - 1) {
             form.classList.remove('disabled')
          }
-      }, (i + 1) * 100)
+      }, (i + 1) * (11 - speed) * 20)
    }
 }
 
@@ -31,6 +32,7 @@ form.onsubmit = e => {
    e.preventDefault()
    text.innerText = ''
    mssg = Array.from(form.custom.value)
+   speed = form.speed.value
    animate()
    form.custom.value = ''
 }

@@ -8,6 +8,7 @@
       <title>Typewriter Animation</title>
       <link rel="stylesheet" href="style.css">
       <script src="script.js" defer></script>
+      <link rel="shortcut icon" href="typewriter.jpg" type="image/x-icon">
    </head>
 
    <body>
@@ -16,7 +17,8 @@
          <span class="cursor">|</span>
       </div>
       <form autocomplete="off" class="disabled">
-         <input type="text" name="custom" placeholder="Type Your Message Here">
+         <input type="text" class="custom" name="custom" placeholder="Type Your Message Here">
+         <input type="number" class="speed" name="speed" placeholder="Choose Your Typewriting Speed Here" min="1" max="10">
          <button name="btn">Animate</button>
       </form>
    </body>
